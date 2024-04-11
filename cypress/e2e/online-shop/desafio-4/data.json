@@ -1,0 +1,21 @@
+{
+  "product": {
+    "name": "Teclado Gamer",
+    "price": 34,
+    "img": "https://ocelot.com.mx/wp-content/uploads/2023/04/teclado-mecanico-switch-rojo-1024x677.jpg",
+    "id": 94830,
+    "quantity": 2
+  },
+  "product2": {
+    "name": "Mouse Gamer 2",
+    "price": 40,
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsfJ6TFZ6PpLJ9nRc6MybhFvXkCBJs-aemQ&usqp=CAU",
+    "id": 94840,
+    "quantity": 2
+  },
+  "datosTarjeta": {
+    "firstName": "Jonhny",
+    "lastName": "Martinez",
+    "cardNumber": "0713071307130713"
+  }
+}

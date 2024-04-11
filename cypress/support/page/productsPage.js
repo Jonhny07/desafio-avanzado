@@ -1,4 +1,5 @@
 const constantes = require("../page/constants");
+
 export class ProductsPage {
   constructor() {
     this.onlineShopButton = '[data-cy="onlineshoplink"]';
@@ -7,6 +8,7 @@ export class ProductsPage {
     this.closeModal = "#closeModal";
     this.addButton = "add-to-cart-";
     this.goToCartButton = "#goShoppingCart";
+    this.goToBilling ='[data-cy="goBillingSummary"]';
     this.goToCheckOut = '[data-cy="goCheckout"]';
     this.firstName ='[data-cy="firstName"]';
     this.lastName ='[data-cy="lastName"]';
@@ -56,5 +58,8 @@ export class ProductsPage {
   }
   clickButtonThankYou(){
     cy.get(this.buttonThankYou, { timeout: constantes.TIMEOUT }).click()
+  }
+  clickButtonBilling(){
+    cy.get(this.goToBilling).click()
   }
 }
