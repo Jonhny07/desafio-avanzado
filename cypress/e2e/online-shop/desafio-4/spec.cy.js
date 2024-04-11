@@ -23,12 +23,12 @@ describe(`${scenarioName} - ${module}`, () => {
     Cypress.session.clearAllSavedSessions();
   });
 
-  beforeEach("Should be logged in", () => {
+  beforeEach("Login", () => {
     cy.login(Cypress.env().usuario, Cypress.env().password);
     cy.visit("");
   });
 
-  it("Deberia permitir al usuario editar un producto", () => {
+  it("Desafio Nro. 4", () => {
     cy.fixture(`${module}/${scenarioName}-${testCaseId}/data`).then((data) => {
       cy.eliminarProducto(data.product.id);
       cy.eliminarProducto(data.product2.id);
